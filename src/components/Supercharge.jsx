@@ -1,23 +1,23 @@
 import React from 'react';
 
-import BlacklistSvg from './icons/BlacklistSvg';
-import TextSvg from './icons/TextSvg';
-import SneakSvg from './icons/SneakSvg';
+import BlacklistSvg from '../components/icons/BlacklistSvg';
+import TextSvg from '../components/icons/TextSvg';
+import SneakSvg from '../components/icons/SneakSvg';
 
 // cards
 const cards = [
   {
-    img: <BlacklistSvg />,
+    img: BlacklistSvg,
     title: 'Create blacklists',
     text: ' Ensure sensitive information never makes its way to your clipboard by excluding certain sources. ',
   },
   {
-    img: <TextSvg />,
+    img: TextSvg,
     title: 'Plain text snippets',
     text: ' Remove unwanted formatting from copied text for a consistent look. ',
   },
   {
-    img: <SneakSvg />,
+    img: SneakSvg,
     title: 'Sneak preview',
     text: ' Quick preview of all snippets on your Clipboard for easy access. ',
   },
@@ -32,7 +32,7 @@ const Supercharge = () => {
       <p className="w-1/3 text-lg text-slate-500 max-md:w-full max-md:px-2">
         We’ve got the tools to boost your productivity.
       </p>
-      
+
       <div className="mt-20 grid w-3/4  grid-cols-3 gap-4 max-md:grid-cols-1 max-md:gap-14">
         {cards.map((e) => (
           <div key={e.title} className="flex flex-col items-center gap-4">
