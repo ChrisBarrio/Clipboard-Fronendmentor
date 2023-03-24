@@ -4,6 +4,7 @@ import BlacklistSvg from './icons/BlacklistSvg';
 import TextSvg from './icons/TextSvg';
 import SneakSvg from './icons/SneakSvg';
 
+// cards
 const cards = [
   {
     img: <BlacklistSvg />,
@@ -31,6 +32,7 @@ const Supercharge = () => {
       <p className="w-1/3 text-lg text-slate-500 max-md:w-full max-md:px-2">
         We’ve got the tools to boost your productivity.
       </p>
+      
       <div className="mt-20 grid w-3/4  grid-cols-3 gap-4 max-md:grid-cols-1 max-md:gap-14">
         {cards.map((e) => (
           <div key={e.title} className="flex flex-col items-center gap-4">
