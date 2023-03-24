@@ -4,7 +4,6 @@ import BlacklistSvg from '../components/icons/BlacklistSvg';
 import TextSvg from '../components/icons/TextSvg';
 import SneakSvg from '../components/icons/SneakSvg';
 
-// cards
 const cards = [
   {
     img: BlacklistSvg,
